@@ -21,7 +21,7 @@ def download_image(link):
 
 
 if __name__ == '__main__':
-    model = load_model("cats_vs_dogs_mnist")
+    model = load_model("cats_vs_dogs")
     download_image("https://snitsya-son.ru/uploads/bonica/2019/09/sobaka--luchshiy-drug-cheloveka.jpg")
     img = tf.keras.preprocessing.image.load_img('test.jpg')
     img_array = tf.keras.preprocessing.image.img_to_array(img)
